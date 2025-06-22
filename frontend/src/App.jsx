@@ -21,36 +21,58 @@ const router = createBrowserRouter([
         element: (
           <>
             <Hero />
-            <Hero2/>
+            <Hero2 />
           </>
         ),
-      },{
-        path:"/contact",
-        element:<><Contact/></>
-      },{
-        path:"book",
-        element:<><Page1/></>
       },
       {
-        path:"/thermal",
-        element:<><Page2/></>
+        path: "/contact",
+        element: (
+          <>
+            <Contact />
+          </>
+        ),
       },
       {
-        path:"/carbon-free",
-        element:<><Page3/></>
-      }
+        path: "/book",
+        element: (
+          <>
+            <Page1/>
+          </>
+        ),
+      },
+      {
+        path: "/thermal",
+        element: (
+          <>
+            <Page2 />
+          </>
+        ),
+      },
+      {
+        path: "/carbon-free",
+        element: (
+          <>
+            <Page3 />
+          </>
+        ),
+      },
     ],
-  },{
-        path:"login",
-        element:<><Loginpage/>
-        <div className="w-dvw h-dvh"></div></>
-      }
+  },
+  {
+    path: "/login",
+    element: (
+      <>
+        <Loginpage />
+      </>
+    ),
+  },
 ]);
 
 const App = () => {
   return (
     <>
-      <RouterProvider router={router}/>
+      <RouterProvider router={router} />
     </>
   );
 };
