@@ -4,12 +4,12 @@ import Hero from "./pages/Hero";
 import Footer from "./components/Footer";
 import Hero2 from "./pages/Hero2";
 import Contact from "./pages/Contact";
-import Page1 from "./pages/page1";
 import Page2 from "./pages/Page2";
 import Page3 from "./pages/Page3";
 import Loginpage from "./pages/Loginpage";
 import AppLayout from "./AppLayout";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Page1 from "./pages/page1";
 
 const router = createBrowserRouter([
   {
